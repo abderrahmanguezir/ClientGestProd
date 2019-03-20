@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   showHideSideBar :boolean = false;
   title = 'eauPotable';
+
+    onShowSideBarChange(onShowHideSideBar){
+    this.showHideSideBar = onShowHideSideBar;
+  }
 }
