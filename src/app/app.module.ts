@@ -5,11 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {produitComponent} from './produit/produit.component';
 import {ProduitMockService} from './produit/produit.mock.service';
+import { NavbarComponent } from './navbar/navbar.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { ContainerComponent } from './container/container.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    produitComponent
+    produitComponent,
+    NavbarComponent,
+    SidebarComponent,
+    ContainerComponent
   ],
   imports: [
     BrowserModule,

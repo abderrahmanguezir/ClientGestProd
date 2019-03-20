@@ -1,2 +1,11 @@
-<h4> Base container </h4>
-<app-produit></app-produit>
+<div class="row">
+<div class="col-lg-2" *ngIf="showHideSideBar">
+  <app-sidebar></app-sidebar>
+
+</div>
+<div class="col-lg-10">
+  <button (click)="showHideSideBar = !showHideSideBar">Show | Hide</button>
+  <app-navbar></app-navbar>
+  <app-container></app-container>
+</div>
+</div>
