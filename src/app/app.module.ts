@@ -3,11 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {produitComponent} from './produit/produit.component';
-import {ProduitMockService} from './produit/produit.mock.service';
+import {produitComponent} from './Produit/produit.component';
+import {ProduitMockService} from './Produit/produit.mock.service';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContainerComponent } from './container/container.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ContainerComponent } from './container/container.component';
     produitComponent,
     NavbarComponent,
     SidebarComponent,
-    ContainerComponent
+    ContainerComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
