@@ -72,7 +72,7 @@ export class produitComponent implements OnInit{
       deleteProduit()
       {
         this.produitService.deleteProduit(this.selectedProduit.id).subscribe(
-          id =>{
+          res =>{
             this.selectedProduit =new Produit();
             this.loadProduit();
           }
